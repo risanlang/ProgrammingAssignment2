@@ -5,14 +5,14 @@
 
 ## We Cache the Given Matrix
 makeCacheMatrix <- function(x = matrix()) {
-        mat <<- NULL
+        m <<- NULL
         set <- function(y) {
                 x <<- y
-                mat <<- NULL
+                m <<- NULL
         }
         get <- function() x
-        setinverse <- function(inverse) mat <<- inverse
-        getinverse <- function() mat
+        setinverse <- function(inverse) m <<- inverse
+        getinverse <- function() m
         list(set = set, get = get,
              setinverse = setinverse,
              getinverse = getinverse)
